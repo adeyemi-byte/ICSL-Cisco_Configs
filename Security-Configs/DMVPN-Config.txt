@@ -16,4 +16,20 @@ ip nhrp nhs 172.16.10.1
 ip mtu 1400
 ip tcp adjust-mss 1360
 exit
-
+----------------
+2---BRANCH A
+conf t
+int tunnel 0
+tunnel source gig 0/0
+tunnel mode gre multipoint
+ip address 172.16.10.2 255.255.255.0
+no shut
+ip nhrp network-id 1
+tunnel key 123
+ip nhrp authentication cisco
+ip nhrp map multicast 10.1.1.1
+ip nhrp map 172.16.10.1 10.1.1.1
+ip nhrp nhs 172.16.10.1
+ip mtu 1400
+ip tcp adjust-mss 1360
+exit
