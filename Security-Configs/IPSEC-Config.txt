@@ -20,3 +20,11 @@ exit
 int fa0/0
 crypto map VPN
 end
+
+---------------------------IPSec Changeable variables
+
+crypto isakmp policy 10*
+encryption aes
+authentication pre-share
+group 2
+exit
