@@ -10,3 +10,10 @@ ip access-list standard TELNET-ACCESS
  permit 105.235.206.0 0.0.0.255
  permit 105.235.207.0 0.0.0.255
 ! 
+line con 0
+ password adeyemipasswordddd
+ login
+ stopbits 1
+
+line aux 0
+ stopbits 1
