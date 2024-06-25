@@ -1,0 +1,22 @@
+---------------------IPSec Config------------------------
+
+crypto isakmp policy 10
+encryption aes
+authentication pre-share
+group 2
+exit
+crypto isakmp key yezokskey address 0.0.0.0 0.0.0.0
+crypto ipsec transform-set YEZOKSWORLD esp-aes esp-sha-hmac
+mode transport
+exit
+ip access-list extended GRE-IN-IPSEC
+permit gre any any
+exit
+crypto map VPN 10 ipsec-isakmp
+match address GRE-IN-IPSEC
+set transform-set YEZOKSWORLD
+set peer 192.0.2.1
+exit
+int fa0/0
+crypto map VPN
+end
