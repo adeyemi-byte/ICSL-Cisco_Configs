@@ -37,7 +37,7 @@ permit gre any any
 exit
 crypto map VPN* 10 ipsec-isakmp
 match address GRE-IN-IPSEC*
-set transform-set YEZOKSWOD*
+set transform-set YEZOKSWORLD*
 set peer 198.51.100.2*
 exit
 int fa0/1*
