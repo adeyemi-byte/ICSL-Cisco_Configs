@@ -4,7 +4,7 @@ no service pad (not used anymore)
 service tcp-keepalives-in (sends keep alive for remote tcp) 
 service tcp-keepalives-out 
 !
-service timestamps debug datetime msec localtime show-timezone (
+service timestamps debug datetime msec localtime show-timezone
 service timestamps log datetime msec localtime show-timezone
 service password-encryption
 service internal
