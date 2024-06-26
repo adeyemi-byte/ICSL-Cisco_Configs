@@ -35,3 +35,10 @@ exit
 ip access-list extended GRE-IN-IPSEC*
 permit gre any any
 exit
+crypto map VPN* 10 ipsec-isakmp
+match address GRE-IN-IPSEC*
+set transform-set YEZOKSWORD*
+set peer 198.51.100.2*
+exit
+int fa0/1*
+crypto map VPN*
