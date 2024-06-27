@@ -65,7 +65,8 @@ transport output none
 end
 
 crypto key gen rsa general-keys modulus 1024
-
-
 ---------------------END---------------------------
+This is the end of the BasicCiscoCommand Configuration. 
+Thanks you.
 
+Adeyemi Olayinka
