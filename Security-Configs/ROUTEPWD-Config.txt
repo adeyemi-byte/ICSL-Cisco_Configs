@@ -17,3 +17,20 @@ line con 0
 
 line aux 0
  stopbits 1
+
+line vty 0 4
+ access-class TELNET-ACCESS in
+ privilege level 15
+ password adeyemipasswordddd
+ login
+ length 0
+ transport input all
+
+line vty 5 15
+ access-class TELNET-ACCESS in
+ privilege level 15
+ password adeyemipasswordddd
+ login
+ transport input all
+!
+===================END======================
