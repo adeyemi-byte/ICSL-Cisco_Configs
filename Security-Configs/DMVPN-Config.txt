@@ -73,7 +73,7 @@ Checks:-
 #show ip nhrp
 #traceroute 50.1.1.10
 
-------------------------------------END
+-------------------END----------------
 This is the end of the DMVPN Configuration. 
 Thanks you.
 
