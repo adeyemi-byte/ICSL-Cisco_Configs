@@ -42,3 +42,9 @@ set peer 198.51.100.2*
 exit
 int fa0/1*
 crypto map VPN*
+
+---------------END------------------------
+This is the end of the IPSEC-Config Configuration. 
+Thanks you.
+
+Adeyemi Olayinka
