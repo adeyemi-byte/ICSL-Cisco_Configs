@@ -1,4 +1,4 @@
-------BASIC ROUTER CONFIG--------------
+------------------( BASIC ROUTER CONFIG )-----------------------
 service nagle (Congestion control algorithm, that help process the tcp session to the router)
 no service pad (not used anymore)
 service tcp-keepalives-in (sends keep alive for remote tcp) 
@@ -65,8 +65,10 @@ transport output none
 end
 
 crypto key gen rsa general-keys modulus 1024
----------------------END---------------------------
+
+----------------------( END )---------------------------
+
 This is the end of the BasicCiscoCommand Configuration. 
-Thanks you.
+Thank you
 
 Adeyemi Olayinka
